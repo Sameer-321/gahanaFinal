@@ -12,7 +12,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="w-full flex justify-between ">
+    <div className="w-full flex justify-between">
       {/* left part */}
       <div className="md:flex hidden ">
         <MagnifyingGlassIcon size={30} className="w-9 h-9 m-3" />
@@ -71,7 +71,8 @@ const Navbar = () => {
       >
         <XMarkIcon
           onClick={() => setNav(false)}
-          className="w-6 h-6 absolute top-2  right-2 hover:bg-black/20  rounded-full cursor-pointer"
+          className="w-6 h-6 absolute top-2  right-2 hover:bg-black/20 
+                     rounded-full cursor-pointer"
         />
         <a href="/" className="bg-gray-600 font-bold">
           Logo
