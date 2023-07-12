@@ -12,10 +12,13 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="w-full flex justify-between">
+    <div className="w-full flex justify-between sticky top-0 z-30  bg-black/10">
       {/* left part */}
       <div className="md:flex hidden ">
-        <MagnifyingGlassIcon size={30} className="w-9 h-9 m-3" />
+        <MagnifyingGlassIcon
+          size={30}
+          className="w-9 h-9 m-3 hover:bg-black/30 rounded-full cursor-pointer "
+        />
       </div>
 
       {/* midpart */}
@@ -64,7 +67,6 @@ const Navbar = () => {
         }
       />
       <div
-        onClick={() => setNav(!nav)}
         className={
           nav ? "absolute top-0 right-0 h-[100vh] w-[30vw] bg-white" : "hidden"
         }
