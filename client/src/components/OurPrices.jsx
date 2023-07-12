@@ -22,7 +22,7 @@ const OurPrices = () => {
     },
   ];
   return (
-    <div className="max-w-[1400px]  mx-auto h-[70vh] my-5 sm:my-9 md:my-9">
+    <div className="max-w-[1400px]  mx-auto h-[70vh] my-10 sm:my-9 md:my-9">
       {/* header */}
       <div className=" flex flex-col">
         <h1 className="sm:p-2 text-5xl sm:text-6xl md:text-7xl font-semibold text-[#832729] text-center mx-auto ">
@@ -37,7 +37,7 @@ const OurPrices = () => {
       {/* price description section */}
 
       <div className=" mx-auto  ">
-        <div className="flex flex-col  md:flex-row md:justify-center p-2 sm:mx-10 md:my-12">
+        <div className="flex flex-col sm:justify-center  md:flex-row md:justify-center p-2 sm:mx-auto md:my-12">
           {list.map(({ id, name, price, img }) => (
             <div className="bg-gray-100  md:mx-[30px] w-full my-5">
               <img className="object-cover" src={img} alt={name} />
