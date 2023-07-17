@@ -25,7 +25,7 @@ const Navbar = () => {
       <div>
         <h1
           className="text-[#832729] text-center font-bold 
-                       text-5xl lg:text-6xl flex flex-col m-3"
+                       text-3xl lg:text-5xl flex flex-col m-3"
         >
           GAHANA
         </h1>

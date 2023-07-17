@@ -11,7 +11,7 @@ const App = () => {
     <div className="bg-[#F3EDE1] w-[full]">
       <Navbar />
       <Hero />
-      {/* <OurPrices /> */}
+      <OurPrices />
       <TopSeller />
       <BestProducts />
     </div>
