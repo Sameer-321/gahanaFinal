@@ -14,6 +14,7 @@ const App = () => {
       <OurPrices />
       <TopSeller />
       <BestProducts />
+    
     </div>
   );
 };
