@@ -1,6 +1,14 @@
+import {
+  ArrowLeftIcon,
+  ArrowRightIcon,
+  ArrowUpCircleIcon,
+} from "@heroicons/react/24/outline";
 import React, { useState } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RxDotFilled } from "react-icons/rx";
+// import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+// import { RxDotFilled } from "react-icons/rx";
+import { SolidDotIcon } from "@heroicons/react/solid";
+<ArrowUpCircleIcon></ArrowUpCircleIcon>;
+
 const ImageSlider = () => {
   const slides = [
     {
@@ -46,38 +54,52 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="max-w-[1400px] h-[580px] w-full m-auto py-16 px-4 relative group">
-      <div
-        className="w-full h-full rounded-2xl bg-center
+    <div>
+      <div className="mx-auto text-center">
+        {/* header */}
+        <div className=" text-[#832729] font-semibold sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
+          Our Happy Customers
+        </div>
+        <div className="p-3 text-xl  md:text-3xl sm:my-3 md:my-5">
+          {" "}
+          Please browser through our Happy Customers
+        </div>
+        {/* border */}
+        <div className="border-t-[2px] border-[#832729] w-full" />
+      </div>
+      <div className="max-w-[1400px] h-[580px] w-full m-auto py-16 px-4 relative group">
+        <div
+          className="w-full h-full rounded-2xl bg-center
                    bg-cover duration-500"
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-      ></div>
-      {/* Left Arrow */}
-      <div
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 
+          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+        ></div>
+        {/* Left Arrow */}
+        <div
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 
                    text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
-      >
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div
-        className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 
+        >
+          <ArrowLeftIcon className="w-[30px] h-[30px]" onClick={prevSlide} />
+        </div>
+        {/* Right Arrow */}
+        <div
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 
                    text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
-      >
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
+        >
+          <ArrowRightIcon className="w-[30px] h-[30px]" onClick={nextSlide} />
+        </div>
 
-      {/* slector */}
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer "
-          >
-            <RxDotFilled />
-          </div>
-        ))}
+        {/* slector */}
+        <div className="flex top-4 justify-center py-2">
+          {slides.map((slide, slideIndex) => (
+            <div
+              key={slideIndex}
+              onClick={() => goToSlide(slideIndex)}
+              className="text-2xl cursor-pointer "
+            >
+              <ArrowUpCircleIcon className=" h-6 w-6" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
