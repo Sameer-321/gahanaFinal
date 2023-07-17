@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import OurPrices from "./components/OurPrices";
 import TopSeller from "./components/TopSeller";
 import BestProducts from "./components/BestProducts";
+import ShopByCategory from "./components/ShopByCategory";
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <OurPrices />
       <TopSeller />
       <BestProducts />
-    
+      <ShopByCategory />
     </div>
   );
 };
