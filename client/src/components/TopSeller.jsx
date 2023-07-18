@@ -51,7 +51,7 @@ const TopSeller = () => {
           Top Seller
         </h1>
 
-        <p className="p-3 text-xl  md:text-3xl">
+        <p className="p-3 text-xl  md:text-3xl text-black/40">
           Check out the products that our customers love the most
         </p>
         {/* border */}

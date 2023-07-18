@@ -58,10 +58,10 @@ const ShopByCategory = () => {
       {/* top headers */}
       <div className="mx-auto text-center">
         {/* header */}
-        <div className=" text-[#832729] font-semibold sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
+        <div className=" text-[#832729] font-semibold text-3xl sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
           Shop By Category
         </div>
-        <div className="p-3 text-xl  md:text-3xl sm:my-3 md:my-5">
+        <div className="p-3 text-xl text-black/40  md:text-3xl sm:my-3 md:my-5">
           {" "}
           Browse through your favorite categories. We've got them all!
         </div>

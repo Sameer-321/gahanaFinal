@@ -2,14 +2,14 @@ import React from "react";
 import first from "../assests/images/heroSection/1.jpg";
 const BestProducts = () => {
   return (
-    <div className="max-w-[1400px] h-max-[55%] mx-auto  my-10">
+    <div className="max-w-[1400px] max-h-[25%] mx-auto text-3xl  my-10">
       {/* top headers */}
       <div className="mx-auto text-center">
         {/* header */}
         <div className=" text-[#832729] font-semibold sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
           Best Product
         </div>
-        <div className="p-3 text-xl   md:text-3xl sm:my-3 md:my-5">
+        <div className="p-3 text-xl text-black/40   md:text-3xl sm:my-3 md:my-5">
           {" "}
           Customers satisfaction has been our greatest policy
         </div>
@@ -19,7 +19,7 @@ const BestProducts = () => {
 
       <div className="grid my-6 w-[80%] mx-auto relative sm:grid-cols-2 sm:max-w-[1400px] sm-my-5 md:my-10">
         {/* first photo */}
-        <div className="w-full h-full">
+        <div className="">
           <img
             alt="best photo"
             src={first}

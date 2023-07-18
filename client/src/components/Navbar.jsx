@@ -62,13 +62,15 @@ const Navbar = () => {
         onClick={() => setNav(!nav)}
         className={
           nav
-            ? " absolute top-0 left-0 bg-black/30 w-[70vw] h-[100vh] "
-            : "hidden"
+            ? "overflow-y-hidden absolute top-0 left-0 ease-in duration-300 bg-black/30 w-[70vw] h-[100vh] "
+            : "absolute top-0 left-[-100%] ease-in duration-500"
         }
       />
       <div
         className={
-          nav ? "absolute top-0 right-0 h-[100vh] w-[30vw] bg-white" : "hidden"
+          nav
+            ? "absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[30vw] bg-white"
+            : "absolute top-0 right-[-100%] h-screen ease-in duration-500"
         }
       >
         <XMarkIcon

@@ -7,11 +7,11 @@ const Hero = () => {
     <div className="w-full h-[80vh] relative">
       {/* overlay */}
 
-      <div className="bg-black/30 absolute top-0 left-0 w-full h-full">
+      <div className="bg-black/10 absolute top-0 left-0 w-full h-full">
         {/* content for overlay */}
-        <div className="absolute  left-0  top-[50%] z-10 text-5xl sm:text-6xl md:text-7xl">
+        {/* <div className="absolute  left-0  top-[50%] z-10 text-5xl sm:text-6xl md:text-7xl">
           Content for the Overlay{" "}
-        </div>
+        </div> */}
       </div>
 
       {/* image */}
