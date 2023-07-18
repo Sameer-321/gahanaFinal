@@ -76,7 +76,11 @@ const ShopByCategory = () => {
             className="w-full my-3 sm:my-4 md:my-5 px-2 sm:p-3 md:p-4"
           >
             {/* image */}
-            <img alt={name} src={src} className="w-full object-cover" />
+            <img
+              alt={name}
+              src={src}
+              className="w-full max-h-[150px] object-cover"
+            />
             {/* label for img products */}
             <div className="w-full  flex flex-col justify-center items-start bg-black/5 ">
               <h3 className="pt-2 text-center text-[#832729] text-lg sm:text-2xl  font-semibold">
