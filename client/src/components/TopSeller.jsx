@@ -1,5 +1,9 @@
 import React from "react";
-
+import second from "../assests/images/heroSection/2.jpg";
+import third from "../assests/images/heroSection/3.jpg";
+import fourth from "../assests/images/heroSection/4.jpg";
+import fifth from "../assests/images/heroSection/5.jpg";
+import seven from "../assests/images/heroSection/7.jpg";
 const TopSeller = () => {
   const images = [
     {
@@ -7,35 +11,35 @@ const TopSeller = () => {
       alt: "a",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
-      img: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      img: second,
     },
     {
       id: 2,
       alt: "b",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-2 ",
-      img: "https://images.unsplash.com/photo-1626808642875-0aa545482dfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      img: third,
     },
     {
       id: 3,
       alt: "c",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
-      img: "https://images.unsplash.com/photo-1530076886461-ce58ea8abe24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      img: fourth,
     },
     {
       id: 4,
       alt: "d",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-1",
-      img: "https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      img: fifth,
     },
     {
       id: 5,
       alt: "e",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto sm:col-span-2 md:col-span-1",
-      img: "https://images.unsplash.com/photo-1593696954577-ab3d39317b97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      img: seven,
     },
   ];
   return (

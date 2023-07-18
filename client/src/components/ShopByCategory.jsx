@@ -1,47 +1,54 @@
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
+import first from "../assests/images/heroSection/1.jpg";
+import second from "../assests/images/heroSection/2.jpg";
+import third from "../assests/images/heroSection/3.jpg";
+import fourth from "../assests/images/heroSection/4.jpg";
+import fifth from "../assests/images/heroSection/5.jpg";
+import seven from "../assests/images/heroSection/7.jpg";
+
 const ShopByCategory = () => {
   const list = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: first,
       name: "Gold Coins",
       ancor: "Explore",
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: second,
       name: "Earrings",
       ancor: "Explore",
     },
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: third,
       name: "Pendants",
       ancor: "Explore",
     },
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: fourth,
       name: "Finger Rings",
       ancor: "Explore",
     },
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: fifth,
       name: "Mangal Sutra",
       ancor: "Explore",
     },
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: seven,
       name: "Neckware",
       ancor: "Explore",
     },
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1505533321630-975218a5f66f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      src: third,
       name: "Neckware",
       ancor: "Explore",
     },
@@ -76,7 +83,7 @@ const ShopByCategory = () => {
                 {name}
               </h3>
               <div className="text-center w-full flex items-center justify-end">
-                <div className="text-black/50">Explore</div>
+                <div className="text-black/50">Detail</div>
                 <ArrowLongRightIcon className="w-[50px] h-[40px] text-blue-600 pt-2" />{" "}
               </div>
             </div>

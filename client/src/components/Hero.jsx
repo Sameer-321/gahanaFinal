@@ -1,6 +1,8 @@
 import React from "react";
-
+import first from "../assests/images/heroSection/2.jpg";
 const Hero = () => {
+  const list = [{}, {}];
+
   return (
     <div className="w-full h-[80vh] relative">
       {/* overlay */}
@@ -13,11 +15,7 @@ const Hero = () => {
       </div>
 
       {/* image */}
-      <img
-        className="w-full h-full object-cover"
-        src="https://i0.wp.com/www.blog1.trymintly.com/wp-content/uploads/2022/05/1647819891_new-project-22.jpeg?w=900&ssl=1"
-        alt="hero img"
-      />
+      <img className="w-full h-full" src={first} alt="hero img" />
     </div>
   );
 };
