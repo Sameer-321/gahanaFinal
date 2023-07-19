@@ -21,7 +21,7 @@ const App = () => {
         <TopSeller />
         <BestProducts />
         <ShopByCategory />
-        <ImageSlider />
+        {/* <ImageSlider /> */}
       </div>
     </div>
   );

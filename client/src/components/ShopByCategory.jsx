@@ -54,7 +54,7 @@ const ShopByCategory = () => {
     },
   ];
   return (
-    <div className="w-max-[1400px] my-10">
+    <div className="max-w-[1400px] mx-auto my-10">
       {/* top headers */}
       <div className="mx-auto text-center">
         {/* header */}

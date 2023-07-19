@@ -3,7 +3,7 @@ import {
   ArrowRightIcon,
   ArrowUpCircleIcon,
 } from "@heroicons/react/24/outline";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { SolidDotIcon } from "@heroicons/react/solid";
 <ArrowUpCircleIcon></ArrowUpCircleIcon>;
@@ -51,6 +51,16 @@ const SliderHeroImage = () => {
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
+  //   pic changes every 10 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 10000 / 2); // 10 seconds
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentIndex]);
 
   return (
     <div className="w-full">

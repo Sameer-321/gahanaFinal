@@ -22,7 +22,7 @@ const OurPrices = () => {
     },
   ];
   return (
-    <div className="w-max-[1400px] my-6 sm:my-10  ">
+    <div className="max-w-[1400px] mx-auto my-6 sm:my-10  ">
       <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729]">
         Our Prices
         <p className="p-3 text-xl  md:text-3xl text-black/40">

@@ -14,30 +14,36 @@ const Navbar = () => {
   return (
     <div className="w-full flex justify-between sticky top-0 z-30  bg-black/10">
       {/* left part */}
+      <h1
+        className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
+                       text-5xl lg:text-6xl  flex flex-col m-3"
+      >
+        GAHANA
+      </h1>
       <div className="md:flex hidden ">
         {/* <MagnifyingGlassIcon
           size={30}
           className="w-9 h-9 m-3 hover:bg-black/30 rounded-full cursor-pointer "
         /> */}
-        <h1
+        {/* <h1
           className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
                        text-5xl lg:text-6xl  flex flex-col m-3"
         >
           GAHANA
-        </h1>
+        </h1> */}
       </div>
 
       {/* midpart */}
       <div>
-        <ul className="h-full pb-2 hidden md:flex md:items-end ">
+        <ul className="h-full pb-2   hidden md:flex md:items-end ">
           {navLinks.map(({ id, name, link }) => (
             <li
               onClick={() => console.log(`navigate to ${link}`)}
               key={id}
               className={
                 name == "Home"
-                  ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] m-1 "
-                  : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 m-1 "
+                  ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] m-1 mx-2 "
+                  : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 m-1 mx-2 "
               }
             >
               {name}
