@@ -57,7 +57,7 @@ const ImageSlider = () => {
     <div>
       <div className="mx-auto text-center">
         {/* header */}
-        <div className=" text-[#832729] font-semibold sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
+        <div className=" text-[#832729]  sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
           Our Happy Customers
         </div>
         <div className=" text-black/40 p-3  text-3xl  md:text-4xl ld:text-5xl sm:my-3 md:my-5">
@@ -101,6 +101,7 @@ const ImageSlider = () => {
           ))}
         </div>
       </div>
+      
     </div>
   );
 };

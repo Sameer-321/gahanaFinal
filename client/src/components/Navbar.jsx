@@ -15,27 +15,30 @@ const Navbar = () => {
     <div className="w-full flex justify-between sticky top-0 z-30  bg-black/10">
       {/* left part */}
       <div className="md:flex hidden ">
-        <MagnifyingGlassIcon
+        {/* <MagnifyingGlassIcon
           size={30}
           className="w-9 h-9 m-3 hover:bg-black/30 rounded-full cursor-pointer "
-        />
+        /> */}
+        <h1
+          className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
+                       text-5xl lg:text-6xl  flex flex-col m-3"
+        >
+          GAHANA
+        </h1>
       </div>
 
       {/* midpart */}
       <div>
-        <h1
-          className="text-[#B62629] text-center font-bold 
-                       text-3xl lg:text-5xl flex flex-col m-3"
-        >
-          GAHANA
-        </h1>
-        <ul className="hidden md:flex ">
+        <ul className="h-full pb-2 hidden md:flex md:items-end ">
           {navLinks.map(({ id, name, link }) => (
             <li
               onClick={() => console.log(`navigate to ${link}`)}
               key={id}
-              className="uppercase cursor-pointer hover:shadow-lg 
-                         duration-300 text-[#832729] m-1 p-2"
+              className={
+                name == "Home"
+                  ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] m-1 "
+                  : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 m-1 "
+              }
             >
               {name}
             </li>
@@ -44,6 +47,10 @@ const Navbar = () => {
       </div>
       {/* right part */}
       <div className="hidden md:flex m-2 p-3">
+        <MagnifyingGlassIcon
+          size={30}
+          className="w-6 h-6 m-2 hover:bg-black/30 rounded-full cursor-pointer "
+        />
         <UserIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
         <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
         <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
@@ -62,15 +69,17 @@ const Navbar = () => {
         onClick={() => setNav(!nav)}
         className={
           nav
-            ? "overflow-y-hidden absolute top-0 left-0 ease-in duration-300 bg-black/30 w-[70vw] h-[100vh] "
+            ? "overflow-y-hidden absolute top-0 left-0 ease-in duration-200 bg-black/30 w-[70vw] h-[100vh] "
             : "absolute top-0 left-[-100%] ease-in duration-500"
         }
       />
+
       <div
         className={
           nav
-            ? "absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[30vw] bg-white"
-            : "absolute top-0 right-[-100%] h-screen ease-in duration-500"
+            ? "overflow-x-hidden overflow-y-hidden absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[30vw] bg-white"
+            : "hidden"
+          // : "overflow-x-hidden absolute top-0 right-[-30vh] h-screen ease-out duration-500  overflow-y-hidden "
         }
       >
         <XMarkIcon
@@ -86,7 +95,7 @@ const Navbar = () => {
           <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
           <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
         </div>
-        <ul className="flex flex-col mx-auto mt-3 text-center">
+        <ul className=" flex flex-col mx-auto mt-3 text-center">
           {navLinks.map(({ id, name, link }) => (
             <li
               onClick={() => console.log(`navigate to ${link}`)}

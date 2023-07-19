@@ -58,7 +58,7 @@ const ShopByCategory = () => {
       {/* top headers */}
       <div className="mx-auto text-center">
         {/* header */}
-        <div className=" text-[#832729] font-semibold text-3xl sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
+        <div className=" text-[#832729] text-3xl sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
           Shop By Category
         </div>
         <div className="p-3 text-xl text-black/40  md:text-3xl sm:my-3 md:my-5">
@@ -76,10 +76,11 @@ const ShopByCategory = () => {
             className="w-full my-3 sm:my-4 md:my-5 px-2 sm:p-3 md:p-4"
           >
             {/* image */}
+
             <img
               alt={name}
               src={src}
-              className="w-full max-h-[150px] object-cover"
+              className="w-full h-[180px] object-cover"
             />
             {/* label for img products */}
             <div className="w-full  flex flex-col justify-center items-start bg-black/5 ">
