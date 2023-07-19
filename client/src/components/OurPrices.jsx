@@ -22,12 +22,16 @@ const OurPrices = () => {
     },
   ];
   return (
-    <div className="w-max-[1400px] my-6 sm:my-10">
+    <div className="w-max-[1400px] my-6 sm:my-10  ">
       <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729]">
         Our Prices
+        <p className="p-3 text-xl  md:text-3xl text-black/40">
+          Check out the products that our customers love the most
+        </p>
       </div>
+      <div></div>
       {/* line */}
-      <div className="flex ">
+      <div className="flex w-full">
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
         <div></div>
         <svg

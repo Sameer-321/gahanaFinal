@@ -10,15 +10,17 @@ import ImageSlider from "./components/ImageSlider";
 
 const App = () => {
   return (
-    <div className=" bg-[#F3EDE1] w-[full]">
+    <div className=" bg-[#F3EDE1] w-[full] ">
       <Navbar />
-
       <Hero />
-      <OurPrices />
-      <TopSeller />
-      <BestProducts />
-      <ShopByCategory />
-      <ImageSlider />
+      <div className="px-9">
+        <OurPrices />
+        <TopSeller />
+        <BestProducts />
+        <ShopByCategory />
+        <ImageSlider />
+        
+      </div>
     </div>
   );
 };

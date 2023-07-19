@@ -4,7 +4,7 @@ const Hero = () => {
   const list = [{}, {}];
 
   return (
-    <div className="w-full h-[80vh] relative">
+    <div className="w-[vw] h-[80vh] relative">
       {/* overlay */}
 
       <div className="bg-black/10 absolute top-0 left-0 w-full h-full">
