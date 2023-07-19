@@ -2,17 +2,17 @@ import React from "react";
 import first from "../assests/images/heroSection/1.jpg";
 const BestProducts = () => {
   return (
-    <div className="max-w-[1500px] max-h-[25%] mx-auto text-3xl  my-10">
+    <div className="max-w-[1400px]  mx-auto text-3xl  my-10">
       {/* top headers */}
-      <div className="w-full text-center">
+      <div className=" text-center">
         {/* header */}
-        <div className=" text-[#832729]  sm:text-4xl md:text-5xl md:p-4 my-2 md:my-4">
+        <div className=" text-[#832729] font-semiboldsm:text-4xl md:text-5xl md:py-4 my-2 md:my-4">
           Best Product
         </div>
-        <div className="p-3 text-xl text-black/40   md:text-3xl sm:my-3 md:my-5">
+        <p className="p-3 text-xl  md:text-3xl text-black/40">
           {" "}
           Customers satisfaction has been our greatest policy
-        </div>
+        </p>
         {/* border */}
         <div className="flex ">
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
@@ -34,18 +34,14 @@ const BestProducts = () => {
         </div>
       </div>
 
-      <div className="grid my-6 w-[80%] mx-auto relative sm:grid-cols-2 sm:max-w-[1400px] sm-my-5 md:my-10">
+      <div className="grid my-6 w-[80%] mx-auto  sm:grid-cols-2 sm:max-w-[1400px] sm-my-5 md:my-10">
         {/* first photo */}
         <div className="">
-          <img
-            alt="best photo"
-            src={first}
-            className="w-full h-full    object-cover"
-          />
+          <img alt="best photo" src={first} className="w-full object-cover" />
         </div>
         {/* overlay */}
 
-        <div className="w-full h-full mx-auto text-[#CB8161] bg-yellow-500 relative">
+        <div className="w-full  mx-auto text-[#CB8161] bg-yellow-500 ">
           <div classname="text-[12px]">WE ARE TO MAKE YOU HAPPY</div>
           <div className="text-3xl">Elevate Your Style</div>
           <div className="text-3xl "> EMBRACE BRILLIANCE</div>

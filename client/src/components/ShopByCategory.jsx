@@ -52,6 +52,36 @@ const ShopByCategory = () => {
       name: "Neckware",
       ancor: "Explore",
     },
+    {
+      id: 1,
+      src: first,
+      name: "Gold Coins",
+      ancor: "Explore",
+    },
+    {
+      id: 2,
+      src: second,
+      name: "Earrings",
+      ancor: "Explore",
+    },
+    {
+      id: 1,
+      src: third,
+      name: "Pendants",
+      ancor: "Explore",
+    },
+    {
+      id: 1,
+      src: fourth,
+      name: "Finger Rings",
+      ancor: "Explore",
+    },
+    {
+      id: 1,
+      src: fifth,
+      name: "Mangal Sutra",
+      ancor: "Explore",
+    },
   ];
   return (
     <div className="max-w-[1400px] mx-auto my-10">

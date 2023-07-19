@@ -64,7 +64,7 @@ const SliderHeroImage = () => {
 
   return (
     <div className="w-full">
-      <div className=" w-[vw] h-[80vh]  relative group">
+      <div className=" w-[vw] h-[80vh]   group">
         <div
           className="w-[vw] h-full  bg-center
                        bg-cover duration-500"

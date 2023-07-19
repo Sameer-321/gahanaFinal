@@ -12,7 +12,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="w-full flex justify-between sticky top-0 z-30  bg-black/10">
+    <div className="w-full flex justify-between  top-0 z-30  bg-black/10">
       {/* left part */}
       <h1
         className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
@@ -20,18 +20,18 @@ const Navbar = () => {
       >
         GAHANA
       </h1>
-      <div className="md:flex hidden ">
-        {/* <MagnifyingGlassIcon
+      {/* <div className="md:flex hidden ">
+        <MagnifyingGlassIcon
           size={30}
           className="w-9 h-9 m-3 hover:bg-black/30 rounded-full cursor-pointer "
-        /> */}
-        {/* <h1
+        />
+        <h1
           className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
                        text-5xl lg:text-6xl  flex flex-col m-3"
         >
           GAHANA
-        </h1> */}
-      </div>
+        </h1>
+      </div> */}
 
       {/* midpart */}
       <div>
@@ -83,14 +83,14 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "overflow-x-hidden overflow-y-hidden absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[30vw] bg-white"
+            ? "overflow-x-hidden overflow-y-hidden absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[30vw] bg-white z-20"
             : "hidden"
           // : "overflow-x-hidden absolute top-0 right-[-30vh] h-screen ease-out duration-500  overflow-y-hidden "
         }
       >
         <XMarkIcon
           onClick={() => setNav(false)}
-          className="w-6 h-6 absolute top-2  right-2 hover:bg-black/20 
+          className="w-6 h-6 absolute top-2  right-2 hover:bg-black/40 
                      rounded-full cursor-pointer"
         />
         <a href="/" className="bg-gray-600 font-bold">
