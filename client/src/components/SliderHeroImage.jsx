@@ -55,7 +55,7 @@ const SliderHeroImage = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 10000 / 2); // 10 seconds
+    }, 10000 / 5); // 10 seconds
 
     return () => {
       clearInterval(interval);
