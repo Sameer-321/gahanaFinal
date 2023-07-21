@@ -48,7 +48,7 @@ const SliderHeroImage = () => {
 
   return (
     <div>
-      <div className="    group">
+      <div className="   group d">
         <img
           className="w-[vw] h-[70%]  bg-center object-scale-down
         bg-cover duration-500"

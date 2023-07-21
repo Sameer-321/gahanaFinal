@@ -39,7 +39,7 @@ const Navbar = () => {
                 className={
                   name == "Home"
                     ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] md:m-1 md:text-xs "
-                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 p-1 lg:m-1 lg:mx-2 md:text-xs"
+                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/80 p-1 lg:m-1 lg:mx-2 md:text-xs"
                 }
               >
                 {name}
@@ -48,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* right part */}
-        <div className="hidden md:gap-3 md:flex  items-center justify-center md:text-sm lg:text-lg">
+        <div className="hidden md:gap-1 lg:gap-3 md:flex  items-center justify-center md:text-sm lg:text-lg">
           {/* after login */}
           {/* <MagnifyingGlassIcon
           size={30}
@@ -59,9 +59,9 @@ const Navbar = () => {
         <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" /> */}
           <MagnifyingGlassIcon
             size={30}
-            className="w-6 h-6 lg:m-2 hover:bg-black/30 rounded-full cursor-pointer "
+            className="w-6 h-6 lg:m-2 hover:bg-black/30 text-black/70 rounded-full cursor-pointer "
           />
-          <button className="text-[#832729] font-semibold md:text-sm lg:text-lg ">
+          <button className="text-[#832729] font- md:text-sm lg:text-lg ">
             Login
           </button>
           <button className=" rounded-md px-1 lg:px-3 lg:py-1 sm:m-3 bg-[#832729] md:text-center text-white">
