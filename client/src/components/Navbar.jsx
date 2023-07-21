@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <h1
           className="text-[#832729] text-center  rounded-md z-10
-                       text-5xl lg:text-6xl  flex  m-3 md:ml-4"
+                       text-3xl md:text-5xl lg:text-6xl  flex  m-3 md:ml-4"
         >
           <img
             className="w-[50px] h-[50px] p-1 mt-2"
@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* midpart */}
         <div>
-          <ul className="h-full md:gap-6   hidden md:flex md:items-center ">
+          <ul className="h-full lg:gap-6   hidden md:flex md:items-center ">
             {navLinks.map(({ id, name, link }) => (
               <li
                 onClick={() => console.log(`navigate to ${link}`)}
@@ -73,7 +73,7 @@ const Navbar = () => {
             className="w-6 h-6 m-2 hover:bg-black/30 rounded-full cursor-pointer "
           />
           <button className="text-[#832729] font-semibold ">Login</button>
-          <button className=" border-[1px] rounded-md px-3 py-1 m-3 bg-[#832729] text-center text-white">
+          <button className=" rounded-md px-3 py-1 sm:m-3 bg-[#832729] md:text-center text-white">
             Sign Up
           </button>
         </div>

@@ -8,6 +8,7 @@ import TopSeller from "./components/TopSeller";
 import BestProducts from "./components/BestProducts";
 import ShopByCategory from "./components/ShopByCategory";
 import ImageSlider from "./components/ImageSlider";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <TopSeller />
         <BestProducts />
         <ShopByCategory />
+        <Footer />
         {/* <ImageSlider /> */}
       </div>
     </div>
