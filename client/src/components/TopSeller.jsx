@@ -8,6 +8,7 @@ const TopSeller = () => {
   const images = [
     {
       id: 1,
+      name: "bracelet",
       alt: "a",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
@@ -15,6 +16,7 @@ const TopSeller = () => {
     },
     {
       id: 2,
+      name: "ring",
       alt: "b",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-2 ",
@@ -22,6 +24,7 @@ const TopSeller = () => {
     },
     {
       id: 3,
+      name: "kadi",
       alt: "c",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
@@ -29,6 +32,7 @@ const TopSeller = () => {
     },
     {
       id: 4,
+      name: "necklace",
       alt: "d",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-1",
@@ -37,6 +41,7 @@ const TopSeller = () => {
     {
       id: 5,
       alt: "e",
+      name: "Ear Ring",
       style:
         "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto sm:col-span-2 md:col-span-1",
       img: seven,
@@ -84,15 +89,18 @@ const TopSeller = () => {
                        gap-4 smp-6 mx-auto my-10 sm:grid-cols-2 sm:grid-rows-3 
                        md:grid-rows-2 md:grid-cols-6 "
       >
-        {images.map(({ id, alt, style, img }) => (
+        {images.map(({ id, alt, style, img, name }) => (
           <div className={style}>
             <img
               key={id}
               alt={alt}
               src={img}
-              className=" w-[300px] h-[150px] mx-auto sm:w-full sm:h-full object-cover"
+              className=" w-[300px] h-[150px] mx-auto sm:w-full sm:h-full object-cover "
             />
-            <div className=" w-[300px] h-[150px] sm:w-full sm:h-full absolute bg-black/30 top-0  index-20" />
+            <div className=" w-[300px] h-[150px] sm:w-full sm:h-full absolute bg-black/30 top-0  index-20 cursor-pointer" />
+            <span className="absolute capitalize bottom-1 left-[5px] md:bottom-2  text-xl  text-black/60">
+              {name}
+            </span>
           </div>
         ))}
       </div>

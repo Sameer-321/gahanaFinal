@@ -2,7 +2,7 @@ import React from "react";
 import first from "../assests/images/heroSection/1.jpg";
 const BestProducts = () => {
   return (
-    <div className="max-w-[1400px]  mx-auto text-3xl  my-10">
+    <div className="max-w-[1400px] max-h-[]  mx-auto text-3xl  my-10">
       {/* top headers */}
       <div className=" text-center">
         {/* header */}
@@ -36,15 +36,35 @@ const BestProducts = () => {
 
       <div className="grid my-6 w-[80%] mx-auto  sm:grid-cols-2 sm:max-w-[1400px] sm-my-5 md:my-10">
         {/* first photo */}
-        <div className="">
-          <img alt="best photo" src={first} className="w-full object-cover" />
+        <div>
+          <img
+            alt="best photo"
+            src={first}
+            className="w-full max-h-[760px] object-cover"
+          />
         </div>
         {/* overlay */}
-
-        <div className="w-full  mx-auto text-[#CB8161] bg-yellow-500 ">
-          <div classname="text-[12px]">WE ARE TO MAKE YOU HAPPY</div>
-          <div className="text-3xl">Elevate Your Style</div>
-          <div className="text-3xl "> EMBRACE BRILLIANCE</div>
+        <div className="w-full max-h-[760px] mx-auto text-[#CB8161] relative ">
+          <div>
+            <img
+              src={require("../assests/images/IMAGE.png")}
+              className="w-full h-full absolute z-5 top-0 left-0"
+            />
+          </div>
+          <div className="absolute z-10 top-[50%] left-0 w-full h-full transform -translate-y-1/2">
+            <div className="text-[14px] absolute py-1 top-[23%] right-11 text-black/40 m ">
+              We are here to make you happy.
+            </div>
+            <div className="text-2xl md:text-4xl py-2 absolute top-[30%] right-12">
+              Elevate Your Style
+            </div>
+            <div className="text-xl md:text-3xl py-1 absolute top-[43%] right-10">
+              EMBRACE BRILLIANCE
+            </div>
+            <button className="border-[#832729] text-[#832729] text-3xl border-[2px] px-2 py-1 rounded-md absolute top-[55%] right-10">
+              Shop
+            </button>
+          </div>
         </div>
       </div>
     </div>
