@@ -11,28 +11,12 @@ import { SolidDotIcon } from "@heroicons/react/solid";
 const SliderHeroImage = () => {
   const slides = [
     {
-      url: require("../assests/images/heroSection/1.jpg"),
+      url: require("../assests/images/heroSection/bg1.jpg"),
       title: "beach",
     },
     {
-      url: require("../assests/images/heroSection/2.jpg"),
+      url: require("../assests/images/heroSection/bg2.jpg"),
       title: "friends",
-    },
-    {
-      url: require("../assests/images/heroSection/3.jpg"),
-      title: "beach",
-    },
-    {
-      url: require("../assests/images/heroSection/4.jpg"),
-      title: "beach",
-    },
-    {
-      url: require("../assests/images/heroSection/5.jpg"),
-      title: "friends",
-    },
-    {
-      url: require("../assests/images/heroSection/6.jpg"),
-      title: "beach",
     },
   ];
 
@@ -72,14 +56,14 @@ const SliderHeroImage = () => {
         ></div>
         {/* Left Arrow */}
         <div
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5
                        text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
         >
           <ArrowLeftIcon className="w-[30px] h-[30px]" onClick={prevSlide} />
         </div>
         {/* Right Arrow */}
         <div
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5
                        text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
         >
           <ArrowRightIcon className="w-[30px] h-[30px]" onClick={nextSlide} />

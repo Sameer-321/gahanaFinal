@@ -131,10 +131,10 @@ const ShopByCategory = () => {
             />
             {/* label for img products */}
             <div className="w-full  flex flex-col justify-center items-start bg-black/5 ">
-              <h3 className="pt-2 text-center text-[#832729] text-lg sm:text-2xl  font-semibold">
+              <h3 className="pt-2 px-1 md:px-2 text-center text-[#832729] text-lg sm:text-2xl  font-semibold">
                 {name}
               </h3>
-              <div className="text-center w-full flex items-center justify-end">
+              <div className="text-center w-full flex items-center justify-start px-2">
                 <div className="text-black/50">Detail</div>
                 <ArrowLongRightIcon className="w-[50px] h-[40px] text-blue-600 pt-2" />{" "}
               </div>

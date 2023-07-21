@@ -18,14 +18,14 @@ const Navbar = () => {
 
         <h1
           className="text-[#832729] text-center  rounded-md z-10
-                       text-3xl md:text-5xl lg:text-6xl  flex  m-3 md:ml-4"
+                       text-xl md:text-2xl lg:text-3xl   flex  mt-4 md:ml-4"
         >
           <img
-            className="w-[50px] h-[50px] p-1 mt-2"
+            className="w-[50px] h-[50px] p-1"
             alt="logo"
-            src={require("../assests/images/logo.jpg")}
+            src={require("../assests/images/logon.png")}
           />
-          GAHANA
+          Trinetra Jewellers
         </h1>
         {/* <div className="md:flex hidden ">
         <MagnifyingGlassIcon
@@ -106,7 +106,7 @@ const Navbar = () => {
         >
           <XMarkIcon
             onClick={() => setNav(false)}
-            className="w-6 h-6 absolute top-2  right-2 hover:bg-black/40 
+            className="w-6 h-6 absolute top-2  right-2 hover:bg-black/40
                      rounded-full cursor-pointer"
           />
           <a href="/" className="bg-gray-600 font-bold">
@@ -122,7 +122,7 @@ const Navbar = () => {
               <li
                 onClick={() => console.log(`navigate to ${link}`)}
                 key={id}
-                className="uppercase text-sm  cursor-pointer hover:shadow-lg 
+                className="uppercase text-sm  cursor-pointer hover:shadow-lg
                          duration-300 rounded-lg text-[#832729] my-2 p-3
                          focus:bg-blue-700"
               >
