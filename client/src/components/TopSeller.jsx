@@ -65,7 +65,7 @@ const TopSeller = () => {
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
         <div></div>
         <svg
-          className="mt-7 w-[10%]"
+          className="mt-2 sm:mt-7 w-[10%]"
           width="82"
           height="25"
           viewBox="0 0 82 25"
@@ -97,7 +97,7 @@ const TopSeller = () => {
               src={img}
               className=" w-[300px] h-[150px] mx-auto sm:w-full sm:h-full object-cover "
             />
-            <div className=" w-[300px] h-[150px] sm:w-full sm:h-full absolute bg-black/30 top-0  index-20 cursor-pointer" />
+            <div className=" w-[300px] h-[150px] sm:w-full sm:h-full absolute bg-black/10 top-0  index-20 cursor-pointer" />
             <span className="absolute capitalize bottom-1 left-[5px] md:bottom-2  text-xl  text-black/60">
               {name}
             </span>

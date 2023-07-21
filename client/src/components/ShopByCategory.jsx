@@ -100,7 +100,7 @@ const ShopByCategory = () => {
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
           <div></div>
           <svg
-            className="mt-7 w-[10%]"
+            className="mt-2 sm:mt-7 w-[10%]"
             width="82"
             height="25"
             viewBox="0 0 82 25"
@@ -131,7 +131,7 @@ const ShopByCategory = () => {
             />
             {/* label for img products */}
             <div className="w-full  flex flex-col justify-center items-start bg-black/5 ">
-              <h3 className="pt-2 px-1 md:px-2 text-center text-[#832729] text-lg sm:text-2xl  font-semibold">
+              <h3 className="pt-2 px-1 lg:px-2 text-center text-[#832729] text-lg   ">
                 {name}
               </h3>
               <div className="text-center w-full flex items-center justify-start px-2">

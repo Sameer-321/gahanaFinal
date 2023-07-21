@@ -13,32 +13,21 @@ const Navbar = () => {
 
   return (
     <div className=" w-full">
-      <div className="w-full flex justify-between  px-5 top-0 z-30 bg-black/10">
+      <div className="w-full flex justify-between items-center px-5 top-0 z-30 bg-black/10">
         {/* left part */}
-
-        <h1
-          className="text-[#832729] text-center  rounded-md z-10
-                       text-xl md:text-2xl lg:text-3xl   flex  mt-4 md:ml-4"
-        >
+        <div className="  flex items-center justify-start ">
           <img
-            className="w-[50px] h-[50px] p-1"
+            className="w-[50px] h-[50px] object-cover"
             alt="logo"
             src={require("../assests/images/logon.png")}
           />
-          Trinetra Jewellers
-        </h1>
-        {/* <div className="md:flex hidden ">
-        <MagnifyingGlassIcon
-          size={30}
-          className="w-9 h-9 m-3 hover:bg-black/30 rounded-full cursor-pointer "
-        />
-        <h1
-          className="text-[#ce181b] text-center font-bold shadow-lg rounded-md z-10
-                       text-5xl lg:text-6xl  flex flex-col m-3"
-        >
-          GAHANA
-        </h1>
-      </div> */}
+          <h1
+            className="text-[#832729]    z-10
+                       text-xl md:text-xl lg:text-3xl   md:ml-4"
+          >
+            Trinetra Jewellers
+          </h1>
+        </div>
 
         {/* midpart */}
         <div>
@@ -49,8 +38,8 @@ const Navbar = () => {
                 key={id}
                 className={
                   name == "Home"
-                    ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] m-1  "
-                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 m-1 mx-2 "
+                    ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] md:m-1 md:text-xs "
+                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 p-1 lg:m-1 lg:mx-2 md:text-xs"
                 }
               >
                 {name}
@@ -59,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
         {/* right part */}
-        <div className="hidden md:gap-3 md:flex  items-center justify-center">
+        <div className="hidden md:gap-3 md:flex  items-center justify-center md:text-sm lg:text-lg">
           {/* after login */}
           {/* <MagnifyingGlassIcon
           size={30}
@@ -70,10 +59,12 @@ const Navbar = () => {
         <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" /> */}
           <MagnifyingGlassIcon
             size={30}
-            className="w-6 h-6 m-2 hover:bg-black/30 rounded-full cursor-pointer "
+            className="w-6 h-6 lg:m-2 hover:bg-black/30 rounded-full cursor-pointer "
           />
-          <button className="text-[#832729] font-semibold ">Login</button>
-          <button className=" rounded-md px-3 py-1 sm:m-3 bg-[#832729] md:text-center text-white">
+          <button className="text-[#832729] font-semibold md:text-sm lg:text-lg ">
+            Login
+          </button>
+          <button className=" rounded-md px-1 lg:px-3 lg:py-1 sm:m-3 bg-[#832729] md:text-center text-white">
             Sign Up
           </button>
         </div>
@@ -81,7 +72,7 @@ const Navbar = () => {
         {/* mobile menu */}
         <div
           onClick={() => setNav(!nav)}
-          className="md:hidden w-10 h-10 m-6 cursor-pointer"
+          className="md:hidden w-7 h-7   cursor-pointer"
         >
           <Bars3Icon />
         </div>
@@ -117,13 +108,13 @@ const Navbar = () => {
             <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
             <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
           </div>
-          <ul className=" flex flex-col mx-auto mt-3 text-center">
+          <ul className=" flex flex-col mx-auto mt-3 text-start">
             {navLinks.map(({ id, name, link }) => (
               <li
                 onClick={() => console.log(`navigate to ${link}`)}
                 key={id}
                 className="uppercase text-sm  cursor-pointer hover:shadow-lg
-                         duration-300 rounded-lg text-[#832729] my-2 p-3
+                         duration-300 rounded-lg text-[#832729] my-2 p-1
                          focus:bg-blue-700"
               >
                 {name}

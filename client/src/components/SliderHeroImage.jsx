@@ -47,13 +47,14 @@ const SliderHeroImage = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full">
-      <div className=" w-[vw] h-[80vh]   group">
-        <div
-          className="w-[vw] h-full  bg-center
-                       bg-cover duration-500"
-          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        ></div>
+    <div>
+      <div className="    group">
+        <img
+          className="w-[vw] h-[70%]  bg-center object-scale-down
+        bg-cover duration-500"
+          src={slides[currentIndex].url}
+          alt="img"
+        />
         {/* Left Arrow */}
         <div
           className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5

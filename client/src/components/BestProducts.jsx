@@ -2,11 +2,11 @@ import React from "react";
 import first from "../assests/images/heroSection/1.jpg";
 const BestProducts = () => {
   return (
-    <div className="max-w-[1400px] max-h-[]  mx-auto text-3xl  my-10">
+    <div className="max-w-[1400px]   mx-auto text-3xl  my-10">
       {/* top headers */}
       <div className=" text-center">
         {/* header */}
-        <div className=" text-[#832729] font-semiboldsm:text-4xl md:text-5xl md:py-4 my-2 md:my-4">
+        <div className=" text-[#832729] sm:text-4xl md:text-5xl md:py-4 my-2 md:my-4">
           Best Product
         </div>
         <p className="p-3 text-xl  md:text-3xl text-black/40">
@@ -18,7 +18,7 @@ const BestProducts = () => {
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
           <div></div>
           <svg
-            className="mt-7 w-[10%]"
+            className="mt-2 sm:mt-7 w-[10%]"
             width="82"
             height="25"
             viewBox="0 0 82 25"
@@ -34,17 +34,17 @@ const BestProducts = () => {
         </div>
       </div>
 
-      <div className="grid my-6 w-[80%] mx-auto  sm:grid-cols-2 sm:max-w-[1400px] sm-my-5 md:my-10">
+      <div className="grid my-6 w-[80%] mx-auto   sm:max-w-[1400px] sm-my-5 md:my-10">
         {/* first photo */}
         <div>
           <img
             alt="best photo"
             src={first}
-            className="w-full max-h-[760px] object-cover"
+            className="w-full object-scale-down"
           />
         </div>
         {/* overlay */}
-        <div className="w-full max-h-[760px] mx-auto text-[#CB8161] relative ">
+        {/* <div className="w-full max-h-[760px] mx-auto text-[#CB8161] relative ">
           <div>
             <img
               src={require("../assests/images/IMAGE.png")}
@@ -65,7 +65,7 @@ const BestProducts = () => {
               Shop
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
