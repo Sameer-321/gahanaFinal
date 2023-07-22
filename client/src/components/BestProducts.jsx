@@ -31,12 +31,12 @@ const BestProducts = () => {
         </div>
 
         {/* content */}
-        <div className="flex flex-col gap-0 ">
+        <div className="flex flex-col  ">
           <div className="w-full ">
             <img
               src={require("../assests/images/heroSection/1.jpg")}
               alt="best product"
-              className=""
+              className=" w-full object-cover"
             />
           </div>
 
@@ -44,25 +44,28 @@ const BestProducts = () => {
 
           {/*overlay images  */}
 
-          <div className=" relative">
+          <div className=" relative  ">
             <img
-              className="w  object-cover w-full h-full"
+              className="  object-cover w-full "
               alt="overlay img"
               src={require("../assests/images/IMAGE.png")}
             />
-            <div className="absolute top-5 left-0 z-20 w-full ">
+            {/* text overlay */}
+            <div className="absolute top-5 left-0 z-20 w-full mt-[10%] mb-[6%] sm:mt-[20%]">
               {" "}
-              <p className="capitalize text-xs text-end mr-8 my-3">
+              <p className="capitalize text-xs text-end mr-[10%]  mb-5  md:text-2xl lg:text-3xl text-black/70 ">
                 we are here to make you happy
               </p>
-              <h1 className="uppercase text-2xl text-end mr-8 my-3">
+              <h1 className="uppercase text-2xl text-end mr-[12%] mt-[6%]  md:text-4xl md:mb-[6%] lg:text-7xl text-[#832729]">
                 elevate your style
               </h1>
-              <h1 className="uppercase  text-2xl text-end mr-4 my-3">
+              <h1 className="uppercase  text-2xl text-end mr-[6%]  md:text-4xl lg:text-7xl text-[#832729]">
                 embrace brilliance
-                <button className="text-sm font-semibold border-[1px] border-black mr-6 ">
-                  Shop Collections
-                </button>
+                <div>
+                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] my-[3%]  md:text-xl lg:text-2xl text-[#832729] sm:p-1 lg:border-[2px]">
+                    Shop Collections
+                  </button>
+                </div>
               </h1>
             </div>
           </div>
