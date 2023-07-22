@@ -38,8 +38,8 @@ const Navbar = () => {
                 key={id}
                 className={
                   name == "Home"
-                    ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] md:m-1 md:text-xs "
-                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/80 p-1 lg:m-1 lg:mx-2 md:text-xs"
+                    ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] md:m-1 text-sm lg:text-base   "
+                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black p-1 lg:m-1 lg:mx-2 text-sm lg:text-base  "
                 }
               >
                 {name}
@@ -53,7 +53,7 @@ const Navbar = () => {
           {/* <MagnifyingGlassIcon
           size={30}
           className="w-6 h-6 m-2 hover:bg-black/30 rounded-full cursor-pointer "
-        />
+        />S
         <UserIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
         <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
         <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" /> */}
