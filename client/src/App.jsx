@@ -7,7 +7,7 @@ import OurPrices from "./components/OurPrices";
 import TopSeller from "./components/TopSeller";
 import BestProducts from "./components/BestProducts";
 import ShopByCategory from "./components/ShopByCategory";
-import ImageSlider from "./components/ImageSlider";
+
 import Footer from "./components/Footer";
 
 const App = () => {

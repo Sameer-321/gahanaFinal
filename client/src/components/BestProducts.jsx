@@ -1,24 +1,21 @@
 import React from "react";
-import first from "../assests/images/heroSection/1.jpg";
+
 const BestProducts = () => {
   return (
-    <div className="max-w-[1400px]   mx-auto text-3xl  my-10">
-      {/* top headers */}
-      <div className=" text-center">
-        {/* header */}
-        <div className=" text-[#832729] sm:text-4xl md:text-5xl md:py-4 my-2 md:my-4">
-          Best Product
+    <div>
+      <div className="max-w-[1400px] mx-auto">
+        <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729]">
+          Best Products
+          <p className="p-3 text-xl  md:text-3xl text-black/40">
+            Check out the products that our customers love the most
+          </p>
         </div>
-        <p className="p-3 text-xl  md:text-3xl text-black/40">
-          {" "}
-          Customers satisfaction has been our greatest policy
-        </p>
-        {/* border */}
-        <div className="flex ">
+        {/* line */}
+        <div className="flex w-full">
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
           <div></div>
           <svg
-            className="mt-2 sm:mt-7 w-[10%]"
+            className=" mt-2 mx-1 sm:mt-7 w-[10%]"
             width="82"
             height="25"
             viewBox="0 0 82 25"
@@ -32,40 +29,47 @@ const BestProducts = () => {
           </svg>
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
         </div>
-      </div>
 
-      <div className="grid my-6 w-[80%] mx-auto   sm:max-w-[1400px] sm-my-5 md:my-10">
-        {/* first photo */}
-        <div>
-          <img
-            alt="best photo"
-            src={first}
-            className="w-full object-scale-down"
-          />
-        </div>
-        {/* overlay */}
-        {/* <div className="w-full max-h-[760px] mx-auto text-[#CB8161] relative ">
-          <div>
+        {/* content */}
+        <div className="flex flex-col  ">
+          <div className="w-full ">
             <img
-              src={require("../assests/images/IMAGE.png")}
-              className="w-full h-full absolute z-5 top-0 left-0"
+              src={require("../assests/images/heroSection/1.jpg")}
+              alt="best product"
+              className=" w-full object-cover"
             />
           </div>
-          <div className="absolute z-10 top-[50%] left-0 w-full h-full transform -translate-y-1/2">
-            <div className="text-[14px] absolute py-1 top-[23%] right-11 text-black/40 m ">
-              We are here to make you happy.
+
+          {/* overlay content */}
+
+          {/*overlay images  */}
+
+          <div className=" relative  ">
+            <img
+              className="  object-cover w-full "
+              alt="overlay img"
+              src={require("../assests/images/IMAGE.png")}
+            />
+            {/* text overlay */}
+            <div className="absolute top-5 left-0 z-20 w-full mt-[10%] mb-[6%] sm:mt-[20%]">
+              {" "}
+              <p className="capitalize text-xs text-end mr-[10%]  mb-5  md:text-2xl lg:text-3xl text-black/70 ">
+                we are here to make you happy
+              </p>
+              <h1 className="uppercase text-2xl text-end mr-[12%] mt-[6%]  md:text-4xl md:mb-[6%] lg:text-7xl text-[#832729]">
+                elevate your style
+              </h1>
+              <h1 className="uppercase  text-2xl text-end mr-[6%]  md:text-4xl lg:text-7xl text-[#832729]">
+                embrace brilliance
+                <div>
+                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] my-[3%]  md:text-xl lg:text-2xl text-[#832729] p-1 md:p-2 lg:border-[2px]">
+                    Shop Collections
+                  </button>
+                </div>
+              </h1>
             </div>
-            <div className="text-2xl md:text-4xl py-2 absolute top-[30%] right-12">
-              Elevate Your Style
-            </div>
-            <div className="text-xl md:text-3xl py-1 absolute top-[43%] right-10">
-              EMBRACE BRILLIANCE
-            </div>
-            <button className="border-[#832729] text-[#832729] text-3xl border-[2px] px-2 py-1 rounded-md absolute top-[55%] right-10">
-              Shop
-            </button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -100,7 +100,7 @@ const ShopByCategory = () => {
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
           <div></div>
           <svg
-            className="mt-2 sm:mt-7 w-[10%]"
+            className="mt-2 mx-1 sm:mt-7 w-[10%]"
             width="82"
             height="25"
             viewBox="0 0 82 25"
@@ -116,7 +116,7 @@ const ShopByCategory = () => {
         </div>
       </div>
       {/* products grid */}
-      <div className=" grid grid-cols-2 gap-3 sm:gap-5 md:gap-7 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 lg:gap-7 xl:gap-7 mx-auto">
+      <div className=" grid  gap-3 sm:gap-5 md:gap-7 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-7 xl:gap-7 mx-auto">
         {list.map(({ id, src, name }) => (
           <div
             key={id}
@@ -131,12 +131,12 @@ const ShopByCategory = () => {
             />
             {/* label for img products */}
             <div className="w-full  flex flex-col justify-center items-start bg-black/5 ">
-              <h3 className="pt-2 px-1 lg:px-2 text-center text-[#832729] text-lg   ">
+              <h3 className="pt-2 px-1 lg:px-2 text-center text-[#832729] text-lg md:text-xl   ">
                 {name}
               </h3>
               <div className="text-center w-full flex items-center justify-start px-2">
-                <div className="text-black/50">Detail</div>
-                <ArrowLongRightIcon className="w-[50px] h-[40px] text-blue-600 pt-2" />{" "}
+                <div className="text-black/50 text-blue-600 ">Detail</div>
+                {/* <ArrowLongRightIcon className="w-[50px] h-[40px] text-blue-600 pt-2" />{" "} */}
               </div>
             </div>
           </div>
