@@ -100,7 +100,7 @@ const ShopByCategory = () => {
           <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
           <div></div>
           <svg
-            className="mt-2 sm:mt-7 w-[10%]"
+            className="mt-2 mx-1 sm:mt-7 w-[10%]"
             width="82"
             height="25"
             viewBox="0 0 82 25"

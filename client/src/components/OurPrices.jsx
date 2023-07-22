@@ -35,7 +35,7 @@ const OurPrices = () => {
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
         <div></div>
         <svg
-          className=" mt-2 sm:mt-7 w-[10%]"
+          className=" mt-2 mx-1 sm:mt-7 w-[10%]"
           width="82"
           height="25"
           viewBox="0 0 82 25"
@@ -50,19 +50,19 @@ const OurPrices = () => {
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
       </div>
 
-      <div className=" grid sm:grid-cols-3 sm:gap-2 md:gap-5 mx-auto p-3 sm:p-5">
+      <div className=" grid sm:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:p-5">
         {list.map(({ id, name, price, img }) => (
-          <div key={id} className=" bg-black/5 mx-auto my-6 ">
-            <div className="w-full ">
+          <div key={id} className=" bg-black/5  my-6 ">
+            <div className="">
               {/* image */}
-              <div className="max-w-[250px] sm:max-w-[300px] max-h-[200px] relative">
+              <div className="w-[full] sm:max-w-[300px] max-h-[200px] relative">
                 <img src={img} className="object-cover max-h-[200px] w-full" />
                 {/* overlay */}
                 {/* <div className="absolute z-10 w-full h-full top-0 left-0 bg-black/10" /> */}
               </div>
             </div>
             {/* price  section */}
-            <div className=" max-w-[250px] sm:max-w-[300px]  bg-black/5  flex flex-col  text-center items-center mx-auto ">
+            <div className=" max-w-[full] sm:max-w-[300px]  bg-black/5  flex flex-col  text-center items-center  ">
               <div className=" w-full text-center  text-[#832729] p-1 font-semibold capitalize">
                 {name}
               </div>
