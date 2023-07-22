@@ -55,7 +55,7 @@ const OurPrices = () => {
           <div key={id} className=" bg-black/5  my-6 ">
             <div className="">
               {/* image */}
-              <div className="w-[full] sm:max-w-[300px] max-h-[200px] relative">
+              <div className="w-[full]  max-h-[200px] relative">
                 <img src={img} className="object-cover max-h-[200px] w-full" />
                 {/* overlay */}
                 {/* <div className="absolute z-10 w-full h-full top-0 left-0 bg-black/10" /> */}
