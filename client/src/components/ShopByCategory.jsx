@@ -116,7 +116,7 @@ const ShopByCategory = () => {
         </div>
       </div>
       {/* products grid */}
-      <div className=" grid  gap-3 sm:gap-5 md:gap-7 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 lg:gap-7 xl:gap-7 mx-auto">
+      <div className=" grid  gap-3 sm:gap-5 md:gap-1 sm:grid-cols-2  lg:grid-cols-4   mx-auto">
         {list.map(({ id, src, name }) => (
           <div
             key={id}
