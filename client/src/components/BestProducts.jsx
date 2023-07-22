@@ -62,7 +62,7 @@ const BestProducts = () => {
               <h1 className="uppercase  text-2xl text-end mr-[6%]  md:text-4xl lg:text-7xl text-[#832729]">
                 embrace brilliance
                 <div>
-                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] my-[3%]  md:text-xl lg:text-2xl text-[#832729] sm:p-1 lg:border-[2px]">
+                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] my-[3%]  md:text-xl lg:text-2xl text-[#832729] p-1 md:p-2 lg:border-[2px]">
                     Shop Collections
                   </button>
                 </div>
