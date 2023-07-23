@@ -62,12 +62,15 @@ const HeroHeader = () => {
       <div className=" w-full h-[70vh]">
         <div
           className="flex flex-col  text-black text-xl  absolute w-full justify-between
-                     gap-3 items-center top-[25%]"
+                     gap-3 md:gap-6 items-center top-[25%]"
         >
-          <div className=" text-3xl sm:text-4xl md:text-5xl">
+          <div className=" text-3xl sm:text-4xl md:text-5xl p-2 hover:border-[1px] ">
             Experience Glamour
           </div>
-          <button className="border-[2px] border-[#832729] font-semibold text-[#832729] p-1 cursor-pointer">
+          <button
+            className="border-[2px] border-[#832729] font-semibold md:text-2xl rounded-md
+                 text-[#832729] p-1 cursor-pointer hover:bg-[#832729] hover:text-white"
+          >
             Shop Jewellery
           </button>
         </div>
@@ -89,8 +92,8 @@ const HeroHeader = () => {
               alt="banners pic"
               className="h-full w-full rounded-md"
             />
-            <div className="w-full h-full absolute bg-black/20 top-0 left-0">
-              <div className="text-[#832729] absolute bottom-2 left-2 text-xl lg:text-2xl">
+            <div className="w-full h-full absolute bg-black/15 top-0 left-0">
+              <div className="text-[#832729] absolute bottom-2 left-2 text-xl pl-1 lg:pl-3 lg:text-3xl">
                 {grid.name}
               </div>
             </div>
