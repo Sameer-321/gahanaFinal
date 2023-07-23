@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Bars3Icon,
   HeartIcon,
@@ -10,6 +10,15 @@ import {
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  useEffect(() => {
+    if (nav) {
+      // Lock the scroll when `nav` is true
+      document.body.style.overflow = "hidden";
+    } else {
+      // Restore scroll when `nav` is false
+      document.body.style.overflow = "auto";
+    }
+  }, [nav]);
 
   return (
     <div>
