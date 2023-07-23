@@ -68,19 +68,22 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="max-w-[1400px] mx-auto" aria-labelledby="footer-heading">
+    <div
+      className="max-w-[1400px] mx-auto mb-9 "
+      aria-labelledby="footer-heading "
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8">
+      <div className="mx-auto  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full border-[2px] border-black/10   ">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-2">
+          <div className="space-y-8 ">
             <img
               className="h-12 ml-3 "
               src={require("../assests/images/logo.jpg")}
               alt="Company name"
             />
-            <p className="text-sm leading-6 text-gray-800">
+            <p className="text-sm leading-6 text-gray-800 ">
               Best Jewellery shop in Nepal.
             </p>
             <div className="flex space-x-6">
@@ -177,6 +180,6 @@ export default function Footer() {
           </p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
