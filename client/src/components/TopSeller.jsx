@@ -10,16 +10,14 @@ const TopSeller = () => {
       id: 1,
       name: "bracelet",
       alt: "a",
-      style:
-        "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
+      style: "relative sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
       img: second,
     },
     {
       id: 2,
       name: "ring",
       alt: "b",
-      style:
-        "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-2 ",
+      style: "relative  sm:w-full sm:h-full mx-auto md:col-span-2 ",
       img: third,
     },
     {
@@ -27,23 +25,21 @@ const TopSeller = () => {
       name: "kadi",
       alt: "c",
       style:
-        "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
+        "relative  sm:w-full sm:h-full mx-auto md:row-span-2 md:col-span-2",
       img: fourth,
     },
     {
       id: 4,
       name: "necklace",
       alt: "d",
-      style:
-        "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto md:col-span-1",
+      style: "relative  sm:w-full sm:h-full mx-auto md:col-span-1",
       img: fifth,
     },
     {
       id: 5,
       alt: "e",
       name: "Ear Ring",
-      style:
-        "relative w-[300px] h-[150px] sm:w-full sm:h-full mx-auto sm:col-span-2 md:col-span-1",
+      style: "relative sm:w-full sm:h-full mx-auto sm:col-span-2 md:col-span-1",
       img: seven,
     },
   ];
@@ -85,7 +81,7 @@ const TopSeller = () => {
                        gap-4 p-6 mx-auto my-10 sm:grid-cols-2 sm:grid-rows-3 
                        md:grid-rows-2 md:grid-cols-6 " */}
       <div
-        className="grid min-w-[200px] min-h-[100px] sm:max-h-[600px] sm:max-w-[1400px] 
+        className="grid  sm:max-h-[600px] sm:max-w-[1400px] 
                        gap-4 smp-6 mx-auto my-10 sm:grid-cols-2 sm:grid-rows-3 
                        md:grid-rows-2 md:grid-cols-6 "
       >
@@ -95,10 +91,16 @@ const TopSeller = () => {
               key={id}
               alt={alt}
               src={img}
-              className=" w-[300px] h-[150px] mx-auto sm:w-full sm:h-full object-cover "
+              className="  mx-auto sm:w-full sm:h-full object-cover "
             />
-            <div className=" w-[300px] h-[150px] sm:w-full sm:h-full absolute bg-black/10 top-0  index-20 cursor-pointer" />
-            <span className="absolute capitalize bottom-1 left-[5px] md:bottom-2  text-xl  text-black/60">
+            <div
+              className=" w-full h-full sm:w-full sm:h-full absolute
+             bg-black/10 top-0  index-20 cursor-pointer"
+            />
+            <span
+              className="absolute capitalize bottom-1 left-[5px] md:bottom-2 
+             text-xl  text-black/60"
+            >
               {name}
             </span>
           </div>

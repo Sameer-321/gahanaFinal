@@ -9,13 +9,16 @@ import BestProducts from "./components/BestProducts";
 import ShopByCategory from "./components/ShopByCategory";
 
 import Footer from "./components/Footer";
+import HeroHeader from "./components/HeroHeader";
+import Example from "./components/Example";
 
 const App = () => {
   return (
     <div className=" bg-[#F3EDE1] w-[full] ">
       <Navbar />
-      <SliderHeroImage />
+      {/* <SliderHeroImage /> */}
       {/* <Hero /> */}
+      <HeroHeader />
       {/* /asdff */}
       <div className="px-9">
         <OurPrices />
@@ -25,6 +28,7 @@ const App = () => {
 
         <Footer />
       </div>
+      {/* <Example /> */}
     </div>
   );
 };
