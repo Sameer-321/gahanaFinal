@@ -79,8 +79,8 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-2">
           <div className="space-y-8 ">
             <img
-              className="h-12 ml-3 "
-              src={require("../assests/images/logo.jpg")}
+              className="h-[100px]  ml-3 "
+              src={require("../assests/images/logoFinaL.png")}
               alt="Company name"
             />
             <p className="text-sm leading-6 text-gray-800 ">

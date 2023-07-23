@@ -28,7 +28,7 @@ const Navbar = () => {
           <img
             className="w-[50px] h-[50px] object-cover"
             alt="logo"
-            src={require("../assests/images/logon.png")}
+            src={require("../assests/images/logoFinaL.png")}
           />
           <h1
             className="text-[#832729]    z-10

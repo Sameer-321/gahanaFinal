@@ -57,7 +57,7 @@ const HeroHeader = () => {
   }, [currentIndex]);
 
   return (
-    <div className="w-full  ">
+    <div className="  ">
       {/*images banner  */}
       <div className=" w-full h-[70vh]">
         <div
