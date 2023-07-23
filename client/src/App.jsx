@@ -23,7 +23,6 @@ const App = () => {
         <BestProducts />
         <ShopByCategory />
         <Footer />
-        {/* <ImageSlider /> */}
       </div>
     </div>
   );

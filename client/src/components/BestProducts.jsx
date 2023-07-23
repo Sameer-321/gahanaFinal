@@ -2,8 +2,8 @@ import React from "react";
 
 const BestProducts = () => {
   return (
-    <div>
-      <div className="max-w-[1400px] mx-auto">
+    <div className="max-w-[1400px] mx-auto">
+      <div>
         <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729]">
           Best Products
           <p className="p-3 text-xl  md:text-3xl text-black/40">
