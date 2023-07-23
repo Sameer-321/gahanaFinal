@@ -61,15 +61,18 @@ const HeroHeader = () => {
       {/*images banner  */}
       <div className=" w-full h-[70vh]">
         <div
-          className="flex flex-col  text-black text-xl  absolute w-full justify-between
+          className="flex flex-col group  text-black text-xl  absolute w-full justify-between
                      gap-3 md:gap-6 items-center top-[25%]"
         >
-          <div className=" text-3xl sm:text-4xl md:text-5xl p-2 hover:border-[1px] ">
+          <div
+            className="text-3xl text-[#832729]/80 group-hover:text-[#832729] sm:text-4xl 
+                          md:text-5xl p-2 group-hover:border-[2px] group-hover:border-[#832729]  "
+          >
             Experience Glamour
           </div>
           <button
             className="border-[2px] border-[#832729] font-semibold md:text-2xl rounded-md
-                 text-[#832729] p-1 cursor-pointer hover:bg-[#832729] hover:text-white"
+                 text-[#832729] p-1 cursor-pointer group-hover:bg-[#832729] group-hover:text-white"
           >
             Shop Jewellery
           </button>
@@ -83,7 +86,7 @@ const HeroHeader = () => {
         <div className="absolute bg-black/10 top-0 left-0 w-full h-[full] "></div>
       </div>
       {/*overlay grid images mapping  */}
-      <div className="grid sm:grid-cols-3 sm:mt-[-10vh] w-full px-9 gap-4 border-1px mt-[-30vh] z-20">
+      <div className="grid sm:grid-cols-3 mt-[-20vh] sm:mt-[-10vh] md:mt-[-12vh] w-full px-9 gap-4 border-1px lg:mt-[-15vh] z-20">
         {grid.map((grid) => (
           <div className="relative">
             <img
