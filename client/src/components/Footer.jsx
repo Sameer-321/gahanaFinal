@@ -110,7 +110,7 @@ export default function Footer() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-800 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
