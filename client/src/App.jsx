@@ -22,6 +22,7 @@ const App = () => {
         <TopSeller />
         <BestProducts />
         <ShopByCategory />
+
         <Footer />
       </div>
     </div>

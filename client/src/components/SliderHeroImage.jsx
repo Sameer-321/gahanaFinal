@@ -56,20 +56,21 @@ const SliderHeroImage = () => {
           alt="img"
         />
         {/* Left Arrow */}
-        <div
+        {/* <div
           className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5
                        text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
         >
           <ArrowLeftIcon className="w-[30px] h-[30px]" onClick={prevSlide} />
-        </div>
+        </div> */}
         {/* Right Arrow */}
-        <div
+        {/* <div
           className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5
                        text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer  "
         >
           <ArrowRightIcon className="w-[30px] h-[30px]" onClick={nextSlide} />
-        </div>
+        </div> */}
       </div>
+      {/* <SliderHeroImage /> */}
     </div>
   );
 };

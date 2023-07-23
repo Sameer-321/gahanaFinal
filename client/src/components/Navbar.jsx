@@ -92,7 +92,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "overflow-x-hidden overflow-y-hidden absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[80vw] bg-white z-20"
+              ? "overflow-x-hidden overflow-y-hidden absolute top-0 right-0 h-[100vh] ease-in duration-300 w-[80vw]  bg-white z-20"
               : "hidden"
             // : "overflow-x-hidden absolute top-0 right-[-30vh] h-screen ease-out duration-500  overflow-y-hidden "
           }
@@ -115,7 +115,7 @@ const Navbar = () => {
             <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
             <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
           </div> */}
-          <ul className=" flex flex-col mx-auto mt-12 text-start">
+          <ul className=" flex flex-col mx-auto mt-12 text-start ">
             {navLinks.map(({ id, name, link }) => (
               <li
                 onClick={() => console.log(`navigate to ${link}`)}

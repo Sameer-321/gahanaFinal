@@ -50,7 +50,7 @@ const OurPrices = () => {
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
       </div>
 
-      <div className=" grid sm:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:p-5">
+      <div className=" grid sm:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:py-5">
         {list.map(({ id, name, price, img }) => (
           <div key={id} className=" bg-black/5  my-6 ">
             <div className="">
@@ -62,11 +62,11 @@ const OurPrices = () => {
               </div>
             </div>
             {/* price  section */}
-            <div className=" max-w-[full] sm:max-w-[300px]  bg-black/5  flex flex-col  text-center items-center  ">
-              <div className=" w-full text-center  text-[#832729] p-1 font-semibold capitalize">
+            <div className=" max-w-[full]   bg-black/5  flex flex-col  text-start items-center  ">
+              <div className=" w-full text-start  text-[#832729] p-1 md:p-3 font-semibold capitalize">
                 {name}
               </div>
-              <div className=" w-full text-center  mx-auto p-1">
+              <div className=" w-full text-start  mx-auto p-1 ">
                 {price}
                 <span className="text-[#832729] font-semibold mx-auto">
                   {" "}
