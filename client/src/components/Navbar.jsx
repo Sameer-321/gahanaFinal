@@ -71,10 +71,10 @@ const Navbar = () => {
               size={30}
               className="w-6 h-6 lg:m-2 hover:bg-black/30 text-black/70 rounded-full cursor-pointer "
             />
-            <button className="text-[#832729] font- md:text-sm lg:text-lg ">
+            <button className="text-[#832729] font- md:text-sm lg:text-md ">
               Login
             </button>
-            <button className=" rounded-md px-1 lg:px-3 lg:py-1 sm:m-3 bg-[#832729] md:text-center text-white">
+            <button className=" rounded-md px-1 lg:px-1  sm:m-3 bg-[#832729] md:text-center text-white">
               Sign Up
             </button>
           </div>

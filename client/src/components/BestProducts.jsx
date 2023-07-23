@@ -31,7 +31,7 @@ const BestProducts = () => {
         </div>
 
         {/* content */}
-        <div className="flex flex-col  ">
+        <div className="flex flex-col md:flex-row  ">
           <div className="w-full ">
             <img
               src={require("../assests/images/heroSection/1.jpg")}
@@ -46,12 +46,12 @@ const BestProducts = () => {
 
           <div className=" relative  ">
             <img
-              className="  object-cover w-full "
+              className="  object-cover w-full h-full"
               alt="overlay img"
               src={require("../assests/images/IMAGE.png")}
             />
             {/* text overlay */}
-            <div className="absolute top-5 left-0 z-20 w-full mt-[10%] mb-[6%] sm:mt-[20%]">
+            <div className="absolute top-5 left-0 z-20 w-full mt-[10%] md:mt-[50%] mb-[6%] sm:mt-[20%]">
               {" "}
               <p className="capitalize text-xs text-end mr-[10%]  mb-5  md:text-2xl lg:text-3xl text-black/70 ">
                 we are here to make you happy
