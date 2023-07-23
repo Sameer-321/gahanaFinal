@@ -136,7 +136,7 @@ const ShopByCategory = () => {
         </svg>
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
       </div>
-      <div className="w-full h-[300px] md:h-[580px]">
+      <div className="w-full h-[300px] md:h-[580px] my-5">
         {" "}
         <div
           className="w-full h-full rounded-2xl bg-center

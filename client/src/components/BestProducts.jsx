@@ -4,7 +4,7 @@ const BestProducts = () => {
   return (
     <div className="max-w-[1400px] mx-auto">
       <div>
-        <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729]">
+        <div className="text-3xl sm:text-4xl md:text-5xl text-center  mx-auto sm:my-5 text-[#832729] ">
           Best Products
           <p className="p-3 text-xl  md:text-3xl text-black/40">
             Check out the products that our customers love the most
@@ -31,7 +31,7 @@ const BestProducts = () => {
         </div>
 
         {/* content */}
-        <div className="flex flex-col md:flex-row  ">
+        <div className="flex flex-col md:flex-row my-5 ">
           <div className="w-full ">
             <img
               src={require("../assests/images/heroSection/1.jpg")}
@@ -53,16 +53,16 @@ const BestProducts = () => {
             {/* text overlay */}
             <div className="absolute top-5 left-0 z-20 w-full mt-[10%] md:mt-[50%] mb-[6%] sm:mt-[20%]">
               {" "}
-              <p className="capitalize text-xs text-end mr-[10%]  mb-5  md:text-2xl lg:text-3xl text-black/70 ">
+              <p className="capitalize text-xs text-end mr-[10%]  mb-5  md:text-2xl  text-black/70 ">
                 we are here to make you happy
               </p>
-              <h1 className="uppercase text-2xl text-end mr-[12%] mt-[6%]  md:text-4xl md:mb-[6%] lg:text-7xl text-[#832729]">
+              <h1 className="uppercase text-2xl text-end mr-[12%] mt-[6%] lg:mt-[10%] md:text-4xl md:mb-[6%] lg:text-5xl text-[#832729]">
                 elevate your style
               </h1>
-              <h1 className="uppercase  text-2xl text-end mr-[6%]  md:text-4xl lg:text-7xl text-[#832729]">
+              <h1 className="uppercase  text-2xl text-end mr-[6%] lg:mt-[10%]   md:text-4xl lg:text-5xl text-[#832729]">
                 embrace brilliance
                 <div>
-                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] my-[3%]  md:text-xl lg:text-2xl text-[#832729] p-1 md:p-2 lg:border-[2px]">
+                  <button className="text-sm font-semibold border-[1px] border-[#832729] mr-[6%] lg:mt-[10%]  my-[3%]  md:text-xl lg:text-2xl text-[#832729] p-1 md:p-2 lg:border-[2px]">
                     Shop Collections
                   </button>
                 </div>
