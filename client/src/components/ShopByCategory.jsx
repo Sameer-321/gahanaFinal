@@ -166,7 +166,7 @@ const ShopByCategory = () => {
           />
         </div>
         <div
-          className="absolute text-[#832729] font-semibolds bottom-[10%] -translate-x-0 translate-y-[-0%] left-[5%]  
+          className="absolute text-[#832729] font-semibolds bottom-[15%] md:bottom-[10%] -translate-x-0 translate-y-[-0%] left-[5%]  
                  text-2xl rounded-md p-2   cursor-pointer"
         >
           {slides[currentIndex].name}
