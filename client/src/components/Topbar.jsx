@@ -7,7 +7,7 @@ import {
 } from "../assests/icons-svg/icons";
 const Topbar = () => {
   return (
-    <div className="px-2 md:px-9">
+    <div className="px-2 md:px-9 border-b-[1px] border-black/18">
       <div className="w-full flex  justify-between">
         {/* left */}
         <div className="flex justify-between items-center gap-2 lg:gap-3  md:py-2 text-black/75 hover:text-black cursor-pointer">
