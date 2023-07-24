@@ -74,21 +74,21 @@ export default function Footer() {
       </h2>
       <div className="  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full bg-black/5  ">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8 mx-2 md:mx-6  ">
-          <div className="space-y-8 ">
+          <div className="space-y-8 lg:space-y-12 ">
             <img
               className=" h-[100px] lg:h-[200px] mx-auto"
               src={require("../assests/images/logofinal.png")}
               alt="Trinetra Jewellers"
             />
-            <p className="text-sm leading-6 text-[#832729] md:text-3xl lg:text-4xl text-center">
-              Best Jewellery shop in Nepal.
+            <p className="text-sm leading-6 text-[#832729] md:text-3xl lg:text-4xl text-center ">
+              Trinetra Jewellers
             </p>
             <div className="flex space-x-9 justify-center md:gap-8 lg:gap-12">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500 w-9 h-9"
+                  className="text-gray-7d00 hover:text-gray-500 w-9 h-9"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon
