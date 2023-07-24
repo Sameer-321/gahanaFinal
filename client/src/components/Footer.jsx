@@ -73,12 +73,12 @@ export default function Footer() {
         Footer
       </h2>
       <div className="  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full bg-black/5  ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-12 ">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 mx-2 md:mx-6 ">
           <div className="space-y-8 ">
             <img
-              className="h-12 ml-3 "
-              src={require("../assests/images/logo.jpg")}
-              alt="Company name"
+              className=" h-[100px] lg:h-[200px] ml-3 "
+              src={require("../assests/images/logofinal.png")}
+              alt="Trinetra Jewellers"
             />
             <p className="text-sm leading-6 text-gray-800 ">
               Best Jewellery shop in Nepal.
@@ -133,41 +133,15 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-[#832729]">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+            <div className="md:grid  md:gap-8 mx-auto">
+              <div className="text-sm font-semibold leading-6 text-[#832729] my-5 md:my-0">
+                Our Location
               </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-[#832729]">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+              <img
+                src={require("../assests/images/map.png")}
+                className="object-cover w-full h-[95%]"
+              />
             </div>
           </div>
         </div>
