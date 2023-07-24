@@ -15,32 +15,31 @@ const Navbar = () => {
       // Lock the scroll when `nav` is true
       document.body.style.overflow = "hidden";
     } else {
-      // Restore scroll when `nav` is false
+      // Restore scroll when `nav` is falser
       document.body.style.overflow = "auto";
     }
   }, [nav]);
-
   return (
     <div>
-      <div className="w-full flex justify-between items-center px-4 md:px-6 top-0 z-20 bg-black/10">
-        {/* left part */}
-        <div className="  flex items-center ">
-          <img
-            className="w-[50px] h-[50px] object-cover"
-            alt="logo"
-            src={require("../assests/images/logon.png")}
-          />
-          <h1
-            className="text-[#832729]    z-10
-                       text-xl md:text-xl lg:text-3xl   md:ml-4"
-          >
-            Trinetra Jewellers
-          </h1>
+      <div className="w-full flex justify-between items-center px-4 md:px-6 top-0 z-20 bg-black/0">
+        {/* leftside */}
+        <div className="m-3">
+          {/* logos and name */}
+          <div className="flex items-center gap-1 ">
+            {/* nav items */}
+            <img
+              alt="logo"
+              src={require("../assests/images/logofinal.png")}
+              className="w-[70px] h-[70px]"
+            />
+            <div className="text-[#832729] text-lg sm:text-xl md:text-2xl lg:text-3xl">
+              Trinetra Jewellers
+            </div>
+          </div>
         </div>
 
-        {/* midpart */}
         <div>
-          <ul className="h-full lg:gap-6   hidden md:flex md:items-center ">
+          <ul className="h-full gap-2 lg:gap-6   hidden md:flex md:items-center ">
             {navLinks.map(({ id, name, link }) => (
               <li
                 onClick={() => console.log(`navigate to ${link}`)}
@@ -48,7 +47,7 @@ const Navbar = () => {
                 className={
                   name == "Home"
                     ? "uppercase font-semibold cursor-pointer hover:shadow-lg duration-300 text-[#832729] md:m-1 text-sm lg:text-base   "
-                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black p-1 lg:m-1 lg:mx-2 text-sm lg:text-base  "
+                    : "uppercase cursor-pointer hover:shadow-lg duration-300 text-black/70 p-1 lg:m-1 lg:mx-2 text-sm lg:text-base  "
                 }
               >
                 {name}
@@ -56,48 +55,25 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        {/* right part */}
-        <div className=" md:gap-1 lg:gap-3 md:flex  items-center justify-center md:text-sm lg:text-lg">
-          {/* after login */}
-          {/* <MagnifyingGlassIcon
-          size={30}
-          className="w-6 h-6 m-2 hover:bg-black/30 rounded-full cursor-pointer "
-        />S
-        <UserIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
-        <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
-        <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" /> */}
-          <div className="hidden md:flex items-center gap-3">
-            <MagnifyingGlassIcon
-              size={30}
-              className="w-6 h-6 lg:m-2 hover:bg-black/30 text-black/70 rounded-full cursor-pointer "
-            />
-            <button className="text-[#832729] font- md:text-sm lg:text-md ">
-              Login
-            </button>
-            <button className=" rounded-md px-1 lg:px-1  sm:m-3 bg-[#832729] md:text-center text-white">
-              Sign Up
-            </button>
+        {/* right side */}
+        <div>
+          <div className="hidden md:flex gap-4 lg:gap-8 text-black/80 hover:text-black ">
+            <div>
+              <MagnifyingGlassIcon className="w-6 h-6 cursor-pointer hover hover:shadow-md" />
+            </div>
+            <UserIcon className="w-6 h-6" />
+            <ShoppingCartIcon className="w-6 h-6" />
           </div>
-          <div
-            onClick={() => setNav(!nav)}
-            className={
-              nav
-                ? "overflow-y-hidden absolute top-0 left-0 ease-in duration-200 bg-black/30 w-[20vw] h-[100vh] "
-                : "realtive top-0 left-[-100%] ease-in duration-500"
-            }
-          />
         </div>
-
         {/* mobile menu */}
         <div
           onClick={() => setNav(!nav)}
-          className="md:hidden w-7 h-7   cursor-pointer"
+          className="md:hidden w-7 h-7   cursor-pointer mr-3 sm:mr-5 text-black/80"
         >
           <Bars3Icon />
         </div>
 
         {/* mobile menu */}
-
         <div
           className={
             nav
@@ -106,33 +82,40 @@ const Navbar = () => {
             // : "overflow-x-hidden absolute top-0 right-[-30vh] h-screen ease-out duration-500  overflow-y-hidden "
           }
         >
-          <div className="flex justify-between mx-6">
+          <div className="flex justify-between mx-6 mt-6 mb-6 ">
             <img
-              className="w-[50px] h-[50px] object-cover  mt-5"
+              className="w-[90px] h-[90px] object-cover  mt-5"
               alt="logo"
-              src={require("../assests/images/logon.png")}
+              src={require("../assests/images/logofinal.png")}
             />
             <XMarkIcon
               onClick={() => setNav(false)}
-              className="w-9 h-9  hover:bg-black/40
-                     rounded-full cursor-pointer mt-5"
+              className="w-9 h-9  hover:bg-black/90 text-black/40
+                     rounded-full cursor-pointer mt-7"
             />
           </div>
+          <div className="mt-[80px] justify-center items-center flex  gap-12 text-black/80 hover:text-black border-y-2 py-2 ">
+            <div>
+              <MagnifyingGlassIcon className="w-8 h-8 cursor-pointer hover hover:shadow-lg" />
+            </div>
+            <UserIcon className="w-8 h-8" />
+            <ShoppingCartIcon className="w-8 h-8" />
+          </div>
 
-          {/* <div className="w-full flex justify-center mt-9  ">
+          {/*x <div className="w-full flex justify-center mt-9  ">
             <UserIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
             <HeartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
             <ShoppingCartIcon className="w-6 h-6 m-2 hover:bg-black/30 cursor-pointer" />
           </div> */}
-          <ul className=" flex flex-col mx-auto mt-12 text-start ">
+          <ul className=" flex flex-col mx-auto mt-12 ml-5 text-start ">
             {navLinks.map(({ id, name, link }) => (
               <li
                 onClick={() => console.log(`navigate to ${link}`)}
                 key={id}
                 className={
                   name === "Home"
-                    ? "uppercase text-2xl  cursor-pointer hover:shadow-lg  duration-300 rounded-lg text-[#832729] my-5  px-3 "
-                    : "uppercase text-2xl  cursor-pointer hover:shadow-lg  duration-300 rounded-lg text-black/70 my-5 px-3 "
+                    ? "uppercase text-xl  cursor-pointer hover:shadow-lg  duration-300 rounded-lg text-[#832729] my-9  px-3 "
+                    : "uppercase text-xl  cursor-pointer hover:shadow-lg  duration-300 rounded-lg text-black/60 my-9 px-3 "
                 }
 
                 // className={

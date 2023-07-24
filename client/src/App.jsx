@@ -9,10 +9,12 @@ import BestProducts from "./components/BestProducts";
 import ShopByCategory from "./components/ShopByCategory";
 
 import Footer from "./components/Footer";
+import Topbar from "./components/Topbar";
 
 const App = () => {
   return (
     <div className=" bg-[#F3EDE1] w-[full] ">
+      <Topbar />
       <Navbar />
       <SliderHeroImage />
       {/* <Hero /> */}
