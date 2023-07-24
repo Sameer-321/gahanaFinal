@@ -24,6 +24,7 @@ const OurPrices = () => {
       id: 3,
       name: "diamond",
       price: "Rs.1,00,000",
+
       img: <DiamondIcon h="100" w="100" />,
     },
   ];
@@ -58,21 +59,25 @@ const OurPrices = () => {
 
       <div className=" grid md:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:py-5">
         {list.map(({ id, name, price, img }) => (
-          <div key={id} className="w-full  bg-black/100 rounded-lg  my-6 ">
-            <div className="w-full  relative">
+          <div key={id} className="max-w-full mx-auto rounded-lg  my-6 ">
+            <div className=" relative">
               <img
                 src={require("../assests/images/IMAGE.png")}
-                className=" top-0 left-0 object-cover rounded-lg  w-full h-[160px]"
+                className=" top-0 left-0 object-cover rounded-lg w-full  h-[150px]"
               />
-              <div className=" absolute z-10 w-full h-full bottom-[0] left-0 ">
-                <div className="  mx-6  flex flex-col justify-between">
+              {/* <div className=" top-0 left-0  rounded-lg w-full  h-[160px] bg-[#E99C14] z-10" /> */}
+              <div className=" absolute z-10 w-full h-full bottom-[0] left-[0] ">
+                <div className="flex justify-center h-full items-center">
                   {img}
-                  <p className="text-black/50 mx-1 text-xl  uppercase">
-                    {name}
-                  </p>
-                  <p>
-                    <span className="text-[#832729]">{price}</span> per tola
-                  </p>
+                  <div className="  mx-2  flex flex-col gap-1 sm:gap-2 items-start">
+                    <p className="text-black/50 mx-1 text-xl  uppercase">
+                      {name}
+                    </p>
+
+                    <span className="text-[#832729]">{price}</span>
+
+                    <p className="text-black/50">per tola</p>
+                  </div>
                 </div>
               </div>
             </div>

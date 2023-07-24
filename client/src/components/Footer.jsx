@@ -68,30 +68,33 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <div className="max-w-[full]  mb-9 " aria-labelledby="footer-heading ">
+    <div className="max-w-[full]   " aria-labelledby="footer-heading ">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full bg-black/5  ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8 mx-2 md:mx-6 ">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 mx-2 md:mx-6  ">
           <div className="space-y-8 ">
             <img
-              className=" h-[100px] lg:h-[200px] ml-3 "
+              className=" h-[100px] lg:h-[200px] mx-auto"
               src={require("../assests/images/logofinal.png")}
               alt="Trinetra Jewellers"
             />
-            <p className="text-sm leading-6 text-gray-800 ">
+            <p className="text-sm leading-6 text-[#832729] md:text-3xl lg:text-4xl text-center">
               Best Jewellery shop in Nepal.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-9 justify-center md:gap-8 lg:gap-12">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-gray-400 hover:text-gray-500 w-9 h-9"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon
+                    className="h-6 w-6 md:h-9 md:w-9 lg:h-12 lg:w-12 "
+                    aria-hidden="true"
+                  />
                 </a>
               ))}
             </div>
