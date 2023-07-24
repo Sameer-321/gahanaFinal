@@ -7,24 +7,24 @@ import {
 } from "../assests/icons-svg/socialMedia";
 const Topbar = () => {
   return (
-    <div className="px-2 md:px-9 border-b-[1px] border-black/18">
-      <div className="w-full flex  justify-between">
+    <div className=" border-b-[1px] border-black/18 bg-[#E99C14]">
+      <div className="w-full flex  justify-between px-2 md:px-9">
         {/* left */}
-        <div className="flex justify-between items-center gap-2 lg:gap-3  md:py-2 text-black/75 hover:text-black cursor-pointer">
+        <div className="flex justify-between items-center gap-1 lg:gap-3  md:py-2 text-black/75 hover:text-black cursor-pointer">
           <PhoneIcon className="w-5 h-5  " />
-          <p className="">+977 9841965587/ 014356265</p>
+          <p className=" flex text-xs">+977 9841965587/ 014356265</p>
         </div>
 
         {/* right */}
-        <div className="flex items-center justify-between gap-8">
+        <div className="flex items-center justify-between gap-3 md:gap-4">
           <div className="cursor-pointer hover:bg-black/30 rounded-md">
-            <TiktokIcon h="25" w="25 " />
+            <TiktokIcon h="15" w="25 " />
           </div>
           <div className="cursor-pointer hover:bg-black/30 rounded-md">
-            <InstagramIcon h="25" w="25 " />
+            <InstagramIcon h="15" w="25 " />
           </div>
           <div className="cursor-pointer hover:bg-black/30 rounded-md">
-            <FacebookIcon h="25" w="25 " />
+            <FacebookIcon h="15" w="25 " />
           </div>
 
           {/* <YoutubeIcon /> */}
