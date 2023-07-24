@@ -1,24 +1,30 @@
 import React from "react";
+import {
+  DiamondIcon,
+  GoldIcon,
+  SilverIcon,
+} from "../assests/icons-svg/ornaments";
 
 const OurPrices = () => {
   const list = [
     {
       id: 1,
       name: "silver",
+
       price: "Rs.10,000",
-      img: "https://images.unsplash.com/photo-1624365165348-442bdf12b0a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img: <SilverIcon h="100" w="100" />,
     },
     {
       id: 2,
       name: "gold",
       price: "Rs.1,00,000",
-      img: "https://images.unsplash.com/photo-1610375461246-83df859d849d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img: <GoldIcon h="100" w="100" />,
     },
     {
       id: 3,
       name: "diamond",
       price: "Rs.1,00,000",
-      img: "https://media.istockphoto.com/id/1225440611/photo/perfect-diamond-isolated-on-the-black.jpg?s=2048x2048&w=is&k=20&c=8KEEZTzKMtV5YWaxQ7ePuEAZb8DKTUByeg1uLcxd694=",
+      img: <DiamondIcon h="100" w="100" />,
     },
   ];
   return (
@@ -29,7 +35,7 @@ const OurPrices = () => {
           Check out the products that our customers love the most
         </p>
       </div>
-      <div></div>
+
       {/* line */}
       <div className="flex w-full">
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
@@ -50,29 +56,24 @@ const OurPrices = () => {
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
       </div>
 
-      <div className=" grid sm:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:py-5">
+      <div className=" grid md:grid-cols-3 sm:gap-2 md:gap-5 mx-auto py-3 sm:py-5">
         {list.map(({ id, name, price, img }) => (
-          <div key={id} className=" bg-black/5  my-6 ">
-            <div className="">
-              {/* image */}
-              <div className="w-[full]  max-h-[200px] relative">
-                <img src={img} className="object-cover max-h-[200px] w-full" />
-                {/* overlay */}
-                {/* <div className="absolute z-10 w-full h-full top-0 left-0 bg-black/10" /> */}
-              </div>
-            </div>
-            {/* price  section */}
-            <div className=" max-w-[full]   bg-black/5  flex flex-col  text-start items-center  ">
-              <div className=" w-full text-start  text-[#832729] p-1 md:p-3 font-semibold capitalize">
-                {name}
-              </div>
-              <div className=" w-full text-start  mx-auto p-1 ">
-                {price}
-                <span className="text-[#832729] font-semibold mx-auto">
-                  {" "}
-                  per
-                </span>{" "}
-                tola
+          <div key={id} className="w-full  bg-black/100 rounded-lg  my-6 ">
+            <div className="w-full  relative">
+              <img
+                src={require("../assests/images/IMAGE.png")}
+                className=" top-0 left-0 object-cover rounded-lg  w-full h-[160px]"
+              />
+              <div className=" absolute z-10 w-full h-full bottom-[0] left-0 ">
+                <div className="  mx-6  flex flex-col justify-between">
+                  {img}
+                  <p className="text-black/50 mx-1 text-xl  uppercase">
+                    {name}
+                  </p>
+                  <p>
+                    <span className="text-[#832729]">{price}</span> per tola
+                  </p>
+                </div>
               </div>
             </div>
           </div>
