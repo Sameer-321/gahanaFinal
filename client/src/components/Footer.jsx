@@ -68,15 +68,12 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <div
-      className="max-w-[1400px] mx-auto mb-9 "
-      aria-labelledby="footer-heading "
-    >
+    <div className="max-w-[full]  mb-9 " aria-labelledby="footer-heading ">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full border-[2px] border-black/10   ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-2">
+      <div className="  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full bg-black/5  ">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-12 ">
           <div className="space-y-8 ">
             <img
               className="h-12 ml-3 "

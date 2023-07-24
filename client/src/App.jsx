@@ -22,9 +22,8 @@ const App = () => {
         <TopSeller />
         <BestProducts />
         <ShopByCategory />
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
