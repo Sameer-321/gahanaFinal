@@ -68,33 +68,33 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <div
-      className="max-w-[1400px] mx-auto mb-9 "
-      aria-labelledby="footer-heading "
-    >
+    <div className="max-w-[full]   " aria-labelledby="footer-heading ">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full border-[2px] border-black/10   ">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8 md:ml-2">
-          <div className="space-y-8 ">
+      <div className="  pb-8 pt-16 sm:pt-24  lg:pt-32 w-full bg-black/5  ">
+        <div className="xl:grid xl:grid-cols-3 xl:gap-8 mx-2 md:mx-6  ">
+          <div className="space-y-8 lg:space-y-12 ">
             <img
-              className="h-12 ml-3 "
-              src={require("../assests/images/logo.jpg")}
-              alt="Company name"
+              className=" h-[100px] lg:h-[200px] mx-auto"
+              src={require("../assests/images/logofinal.png")}
+              alt="Trinetra Jewellers"
             />
-            <p className="text-sm leading-6 text-gray-800 ">
-              Best Jewellery shop in Nepal.
+            <p className="text-sm leading-6 text-[#832729] md:text-3xl lg:text-4xl text-center ">
+              Trinetra Jewellers
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-9 justify-center md:gap-8 lg:gap-12">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-400 hover:text-gray-500"
+                  className="text-gray-7d00 hover:text-gray-500 w-9 h-9"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
+                  <item.icon
+                    className="h-6 w-6 md:h-9 md:w-9 lg:h-12 lg:w-12 "
+                    aria-hidden="true"
+                  />
                 </a>
               ))}
             </div>
@@ -136,41 +136,15 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-[#832729]">
-                  Company
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+            <div className="md:grid  md:gap-8 mx-auto">
+              <div className="text-sm font-semibold leading-6 text-[#832729] my-5 md:my-0">
+                Our Location
               </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-[#832729]">
-                  Legal
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+              <img
+                src={require("../assests/images/map.png")}
+                className="object-cover w-full h-[95%]"
+              />
             </div>
           </div>
         </div>

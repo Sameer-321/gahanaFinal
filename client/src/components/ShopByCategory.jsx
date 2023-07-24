@@ -10,14 +10,8 @@ import seven from "../assests/images/heroSection/7.jpg";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const ShopByCategory = () => {
+  // sildes max length should be 7
   const slides = [
-    {
-      id: 1,
-      src: first,
-
-      name: "Gold Coins",
-      ancor: "Explore",
-    },
     {
       id: 2,
       src: second,
@@ -54,12 +48,7 @@ const ShopByCategory = () => {
       name: "Neckware",
       ancor: "Explore",
     },
-    {
-      id: 1,
-      src: first,
-      name: "Gold Coins",
-      ancor: "Explore",
-    },
+
     {
       id: 2,
       src: second,
@@ -72,40 +61,7 @@ const ShopByCategory = () => {
       name: "Pendants",
       ancor: "Explore",
     },
-    {
-      id: 1,
-      src: fourth,
-      name: "Finger Rings",
-      ancor: "Explore",
-    },
-    {
-      id: 1,
-      src: fifth,
-      name: "Mangal Sutra",
-      ancor: "Explore",
-    },
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-  //   pic changes every 10 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 10000 / 5); // 10 seconds
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentIndex]);
 
   return (
     <div className="max-w-[1400px]  m-auto py-16  relative group">
@@ -136,41 +92,34 @@ const ShopByCategory = () => {
         </svg>
         <div className="border-t-[2px] border-[#832729] w-[45%] my-5 sm:my-10" />
       </div>
-      <div className="w-full h-[300px] md:h-[580px] my-5">
-        {" "}
-        <div
-          className="w-full h-full rounded-2xl bg-center
-                 bg-cover duration-500"
-          style={{ backgroundImage: `url(${slides[currentIndex].src})` }}
-        ></div>
-        {/* Left Arrow */}
-        <div
-          className="absolute top-[60%] -translate-x-0 translate-y-[-0%] left-1 sm:left-2 md:left-7 
-                 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer"
-        >
-          <ArrowLeftIcon
-            onClick={prevSlide}
-            size={30}
-            className="  h-6 w-6 md:h-10 md:w-10"
-          />
-        </div>
-        {/* Right Arrow */}
-        <div
-          className="absolute top-[60%] -translate-x-0 translate-y-[-0%] right-1 md:right-7 
-                 text-2xl rounded-full p-2 group-hover:bg-black/20 text-white cursor-pointer"
-        >
-          <ArrowRightIcon
-            onClick={nextSlide}
-            size={30}
-            className="h-6 w-6 md:h-10 md:w-10"
-          />
-        </div>
-        <div
-          className="absolute text-[#832729] font-semibolds bottom-[15%] md:bottom-[10%] -translate-x-0 translate-y-[-0%] left-[5%]  
-                 text-2xl rounded-md p-2   cursor-pointer"
-        >
-          {slides[currentIndex].name}
-        </div>
+      {/* content */}
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 w-full ">
+        {slides.map((item) => (
+          <div className="relative">
+            <img
+              key={item.id}
+              src={item.src}
+              className="w-full object-cover rounded-md"
+              alt="name"
+            />
+            {/* image overlay */}
+            <div className=" bg-black/10 rounded-md absolute w-full h-full left-0 bottom-0 " />
+            {/* price section --overlay */}
+            <div className="w-full max-h-[40%] absolute bottom-0 left-0 bg-black/10 rounded-md">
+              <div className="flex flex-col gap-0 justify-between items-center h-full ">
+                <div className=" text-xl sm:text-2xl r text-black/70">
+                  {item.name}
+                </div>
+                <div
+                  className="text-base md:text-lg text-[#832729] cursor-pointer  hover:bg-[#832729] hover:rounded-md
+                              hover:text-white hover:font-semibold hover:px-1 hover:mb-2"
+                >
+                  Explore
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
