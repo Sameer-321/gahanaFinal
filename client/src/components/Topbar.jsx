@@ -1,10 +1,10 @@
 import { PhoneIcon } from "@heroicons/react/24/solid";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   FacebookIcon,
   InstagramIcon,
   TiktokIcon,
-} from "../assests/icons-svg/icons";
+} from "../assests/icons-svg/socialMedia";
 const Topbar = () => {
   return (
     <div className="px-2 md:px-9 border-b-[1px] border-black/18">
